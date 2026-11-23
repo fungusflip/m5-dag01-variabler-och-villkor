@@ -4,12 +4,12 @@ Skriv din gissning FÖRST. Skriv sedan raden i STEG 7 i `src/main.ts`, kör den 
 
 | Uttryck | Min gissning | Det som hände | Vad sa TypeScript? | Hade jag rätt? |
 |---|---|---|---|---|
-| `"5" + 3` | | | | |
-| `"5" - 3` | | | | |
-| `true + 1` | | | | |
-| `0.1 + 0.2` | | | | |
-| `"" === 0` | | | | |
-| `null == undefined` | | | | |
+| `"5" + 3` | | 53 | Inget fel (blir text) | |
+| `"5" - 3` | | 2 | Fel TS2362: vänstra sidan måste vara number | |
+| `true + 1` | | 2 | Fel TS2365: + går inte på boolean och number | |
+| `0.1 + 0.2` | | 0.30000000000000004 | Inget fel | |
+| `"" === 0` | | false | Fel TS2367: string och number överlappar inte | |
+| `null == undefined` | | true | Inget fel | |
 
 ## Min regel för det jag missade
 

@@ -1,14 +1,27 @@
-// Kalibrering: FILIP FYLLER I SJÄLV (utan att googla). Skriv "vet inte" om du fastnar.
-// Se KALIBRERING.md. Filen är tom med flit så att den visar var du står.
+﻿// 1. Förnamn
+const namn = "Filip";
+console.log(namn);
 
-// 1. Förnamn
+// 2. Summa av två tal
+const a = 4;
+const b = 7;
+console.log(a + b);
 
-// 2. Summan av två tal
-
-// 3. if: "Stort" om > 10, annars "Litet"
+// 3. if / else
+const tal = 12;
+if (tal > 10) {
+  console.log("Stort");
+} else {
+  console.log("Litet");
+}
 
 // 4. Loop 1 till 5
+for (let i = 1; i <= 5; i++) {
+  console.log(i);
+}
 
 // 5. Funktion: tal gånger två
-
-export {};
+function gangerTva(n: number) {
+  return n * 2;
+}
+console.log(gangerTva(5));
